@@ -1,0 +1,67 @@
+<!-- 医生详情 -->
+<view class="doc-head">
+	<image src="{{detail[0].doctorImg}}"></image>
+	<view class="doc-head-center">
+
+		<view class="doc-head-center-a">
+			<text>{{detail[0].name}}</text>
+			<text  class="doctor-post">{{detail[0].dept}}</text>
+
+		</view>
+
+		<view class="hospital-grade">三甲</view>
+		<view class="hospital-property">
+			<text>{{detail[0].hospital}}</text>
+			<text>{{detail[0].office}}</text>
+		</view>
+
+		<view class="doc-talk">
+			<view>咨询人次：</view>
+			<view class="talk-sum">{{detail[0].viewNum}}</view>
+		</view>
+	</view>
+	<button class="bg-mian" size="mini" bindtap="goComments" data-mess="{{detail[0]}}">评价</button>
+</view>
+
+
+
+<view class="doc-body">
+	<view class="doc-body-title">专业擅长:<text class="margin-left"> {{detail[0].major}}</text></view>
+	<view class="doc-body-title ">医生简介:<text class="margin-left"> {{detail[0].des}}</text></view>
+
+</view>
+
+
+<!-- 患者评价 -->
+<view class="doc-foot">
+
+	<view class="doc-foot-head">
+		<text>患者评价</text>
+		<view class="doc-foo-head-a" bindtap="all">全部评价> </view>
+	</view>
+
+
+
+	<view wx:for="{{commList}}" wx:for-key="key1" wx:key="index" wx:for-item="item" style="border-bottom:1px dotted #eee;" >
+		<view class="user-says">
+
+			<view class="user-says-title">
+
+				<text class="name">{{item.userInfo.name}}**</text>
+				<!-- 星星组件 -->
+				<text class="stars cuIcon-likefill {{item.endstar-1>=row? 'text-red': 'text-gray'}}" wx:for="{{5}}" wx:key="row" wx:for-key="row" wx:for-item="row" id="{{index}}"></text>
+
+			</view>
+
+			<text>
+			<text class="time">{{item.createTime}}</text>
+
+			</text>
+
+		</view>
+	<view style="margin:5rpx 20rpx;">
+		<text class="user-says-item ">{{item.content}}</text>
+	</view>
+	
+	</view>
+</view>

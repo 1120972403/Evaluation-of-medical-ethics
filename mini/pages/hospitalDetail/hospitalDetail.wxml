@@ -1,0 +1,23 @@
+<!-- 医院详情 -->
+<view class="margin" bindtap="showDes">
+
+  <text class="cuIcon-similar  text-gray" style="font-size:40rpx;"></text>
+  <text class="margin-left-xs h-title">{{hislist[0].name}}</text>
+  <view class="ajc">
+    <image class="margin-top " style="width:100%" src="{{hislist[0].cover}}" mode="widthFix"></image>
+  </view>
+</view>
+<view class="bg-gray" style="height:15rpx;"></view>
+
+<!-- 这个下面放分类列表 -->
+<view class="margin">
+  <view>
+    <text class="cuIcon-similar  text-gray" style="font-size:40rpx;"></text>
+    <text class="margin-left-xs h-title">{{hislist[0].des}}</text>
+    <view class="desc padding-top">
+      <view >{{des}}</view>
+      <view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,30 @@
+/* mini/pages/news/newsDetail/newsDetail.wxss */
+.adv{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.name{
+  font-size: 50rpx;
+  margin: 10rpx;
+  /* align-self: center; */
+}
+.img{
+  height: 300rpx;
+  width: 100%;
+}
+.name-head{
+  width: 700rpx;
+  display: flex;
+  justify-content: space-between;
+  margin: 10rpx;
+}
+textarea{
+  padding: 20rpx 0;
+  width: 700rpx;
+  letter-spacing: 10rpx;
+  /* background: greenyellow; */
+}

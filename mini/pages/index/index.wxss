@@ -1,0 +1,82 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+ 
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.btn{
+  margin: 5rpx 5rpx;
+}
+.news-head{
+  width: 700rpx;
+  display: flex;
+}
+.news-all{
+  margin-left: 400rpx;
+  color: rgb(180, 180, 180)
+}
+
+
+.news-head{
+  width: 700rpx;
+  display: flex;
+}
+.news-all{
+  margin-left: 400rpx;
+  color: rgb(180, 180, 180)
+}
+
+.doc-head{
+  padding: 30rpx 20rpx;
+  display: flex;
+  align-items: center;
+  background: white;
+}
+.doc-head image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+.doc-head-center{
+  display: flex;
+  flex-direction: column;
+  margin: 0 20rpx;
+}
+.hospital-property text{
+  padding: 0 5rpx;
+}
+.hospital-grade{
+  background: rgb(246, 219, 206);
+  text-align: center;
+  width: 100rpx;
+  border-radius: 10rpx;
+}
+.doc-talk{
+  display: flex;
+  align-items: center;
+}
+.talk-sum{
+  color: rgb(246, 219, 200);
+}
+.doctor-post{
+  color: rgb(180, 180, 180);
+  margin-left: 20rpx;
+  font-size: 20rpx;
+}

@@ -1,0 +1,8 @@
+<!-- 反馈界面 -->
+<view class="help-container">
+	<textarea class="help-content" placeholder="请输入反馈内容" bindinput="contentInput" value="{{content}}"></textarea>
+	<!-- <input class="help-phone" placeholder="请输入手机号" ></input> -->
+	<view class="padding flex flex-direction">
+		<button type="primary" size="default" bindtap="add">提交</button>
+	</view>
+</view>

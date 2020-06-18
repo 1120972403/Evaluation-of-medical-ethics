@@ -1,0 +1,13 @@
+/* pages/admin/hospital/hospital.wxss */
+.img{
+  width: 100%;
+  height: 300rpx;
+  border: 1px dashed #eee;
+  padding: 20rpx;
+}
+
+.ajc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

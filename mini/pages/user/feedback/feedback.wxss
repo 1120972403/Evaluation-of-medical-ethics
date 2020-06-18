@@ -1,0 +1,25 @@
+/* mini/pages/user/feedback/feedback.wxss */
+page{
+  background: rgb(242, 242, 242)
+}
+.help-container{
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.help-content{
+  width: 700rpx;
+  background: white;
+  border-radius: 10rpx;
+  padding: 10rpx;
+}
+.help-phone{
+  width: 700rpx;
+  height: 100rpx;
+  background: white;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  border-radius: 10rpx;
+  padding-left: 15rpx;
+}

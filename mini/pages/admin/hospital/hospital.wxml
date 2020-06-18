@@ -1,0 +1,28 @@
+<!--pages/admin/hospital/hospital.wxml-->
+<view class="ajc margin padding" style="font-size:35rpx;border-bottom:1px dotted #eee;">医院名称</view>
+<view class="cu-form-group">
+	<input name="name" placeholder="请输入分类描述" value='{{name}}' bindinput='nameInput'></input>
+</view>
+
+<view class="ajc margin padding" style="font-size:35rpx;border-bottom:1px dotted #eee;">医院logo</view>
+<view class="ajc   text-grey" style="font-size:35rpx;" wx:if="{{cover!==''}}" bindtap='chooseImg'>重新上传</view>
+<view class="ajc">
+	<image wx:if="{{cover==''}}" class=' cu-avatar  bg-white' src='/libs/images/add.png' bindtap='chooseImg'></image>
+</view>
+<view class="ajc">
+	<image wx:if="{{cover!==''}}" class="img" src='{{cover}}' bindtap='previewImg' data-img='{{cover}}'></image>
+</view>
+
+<!-- 医院介绍 -->
+
+<view class="ajc margin padding" style="font-size:35rpx;border-bottom:1px dotted #eee;">医院介绍</view>
+<view class="border margin br">
+	<view class="cu-form-group ">
+		<textarea maxlength="-1" disabled="{{modalName!=null}}" name="nextcontent" value="{{des}}" bindinput="desInput" auto-height placeholder="医院介绍内容编辑框......" style="min-height:200rpx;">
+    </textarea>
+	</view>
+</view>
+
+<view class="padding flex flex-direction v_bottom">
+	<button class="cu-btn bg-mian margin-tb-sm lg" bindtap='check' data-id="{{list[0]._id}}">更新</button>
+</view>

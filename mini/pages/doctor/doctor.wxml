@@ -1,0 +1,37 @@
+<!--pages/doctor/doctor.wxml-->
+<!-- <view style='position:fixed;'>
+	<view style='height:{{CustomBar}}px;width:{{w_width}}px;' class='bg-yellow flex align-end'>
+		<view style='padding-right:{{img3_width}}px;'>
+
+			<view class="cu-bar search bg-yellow">
+				<view class="search-form round" style='background:#ffffff'>
+					<text class="cuIcon-search"></text>
+					<input type="text" placeholder="搜索感兴趣内容" confirm-type="search" bindinput='keyInput' bindconfirm='search'></input>
+				</view>
+				<view class="action">
+					<button class="cu-btn bg-yellow light shadow-blur round" bindtap='search'>搜索</button>
+				</view>
+			</view>
+
+
+		</view>
+	</view>
+</view> -->
+<view class='kind_contain' style='margin:10px'>
+	<block wx:for="{{list}}" wx:key="_id">
+		<block wx:for="{{item}}" wx:key="_id">
+			<view style='width:{{app_width/2-10}}px' bindtap='details' data-details='{{item}}' bindtap="showDoctorDetail" data-id="{{item._id}}">
+				<view class='bg-whites borderRadius' style='margin:10px;overflow:hidden'>
+					<view style='padding:10px'>
+						<image src='{{item.doctorImg}}' lazy-load style='width:{{app_width/2-50}}px;height:{{app_width/2-50}}px;border-radius:10px'></image>
+					</view>
+					<view class='padding-sm bg-white'>
+						<view class='text-black text-center'>{{item.name}}</view>
+						<view class='text-grey text-sm text-center'>{{item.dept}}</view>
+            <view class='text-grey text-sm text-center'>{{item.office}}</view>
+					</view>
+				</view>
+			</view>
+		</block>
+	</block>
+</view>

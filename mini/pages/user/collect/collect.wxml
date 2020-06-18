@@ -1,0 +1,15 @@
+<!-- 我的收藏 -->
+
+<text wx:if="{{!have_collect}}">暂无收藏，先去看看新闻吧！</text>
+
+<view  class="container" wx:for="{{storelist}}" wx:key="index">
+
+
+	<view class="title">
+    <textarea maxlength="15" value="{{item.content.title}}"></textarea>
+		<text bindtap="isColloct" data-id="{{item._id}}" class="stars cuIcon-likefill {{collect_flag? 'text-red': 'text-gray'}}"></text>
+	</view>
+	<view class="content" bindtap="go" data-id="{{item.content._id}}">{{item.content.des}}</view>
+
+
+</view>

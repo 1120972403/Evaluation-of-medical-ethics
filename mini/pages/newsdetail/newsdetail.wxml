@@ -1,0 +1,10 @@
+<!-- 新闻详情 -->
+<view class='html' >
+	<view class='text-black text-xl'>{{details.title}}</view>
+	<view class="name-head">
+    <text>时间:{{details.date}}</text>
+    <text>类型:{{details.kind}}</text>
+    <text bindtap="isCollect" class="stars cuIcon-likefill {{ is_collect ? 'text-red': 'text-gray'}}"></text>
+  </view>
+	<Parser class="margin-top " style="border-top:1px dotted #eee;" html="{{details.content}}" show-with-animation animation-duration="500" img-mode="widthFix"></Parser>
+</view>

@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/doctor/doctor",
+    "pages/hospitalDetail/hospitalDetail",
+    "pages/news/news",
+    "pages/newsdetail/newsdetail",
+    "pages/doctor/doctorDetail/doctorDetail",
+    "pages/doctor/doctorDetail/allWords/allWords",
+    "pages/doctor/doctorDetail/allcomments/allcomments",
+    "pages/user/userInfo/userInfo",
+    "pages/user/sayWords/sayWords",
+    "pages/user/collect/collect",
+    "pages/user/feedback/feedback",
+    "pages/admin/admin",
+    "pages/admin/hospital/hospital",
+    "pages/admin/addnewtype/addnewtype",
+    "pages/admin/addnew/addnew",
+    "pages/admin/looknewlist/looknewlist",
+    "pages/admin/adddoctor/adddoctor",
+    "pages/admin/lookdoctorlist/lookdoctorlist",
+    "pages/admin/commets/commets"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "医德医风评价系统",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "速览",
+        "iconPath": "/libs/images/首页1.png",
+        "selectedIconPath": "/libs/images/首页-选中.png"
+      },
+      {
+        "pagePath": "pages/doctor/doctor",
+        "text": "评价",
+        "iconPath": "/libs/images/评价.png",
+        "selectedIconPath": "/libs/images/评价-选中.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "/libs/images/我的.png",
+        "selectedIconPath": "/libs/images/我的-选中.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "canvasdrawer": "/components/canvasdrawer/canvasdrawer",
+    "Parser": "/Parser/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

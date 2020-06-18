@@ -1,0 +1,24 @@
+<!--pages/admin/looknewlist/looknewlist.wxml-->
+<!--pages/admin/lookdoctorlist/lookdoctorlist.wxml-->
+<block wx:for="{{list}}" wx:key="_id">
+	<view class="cu-card article solid" style="border:1px solid #eee;">
+		<view class="cu-item shadow" style="padding-bottom: 0;">
+			<view class=" title ">
+				<text class="text-cut">标题：</text><text class="margin-right">{{item.title}}</text>
+				<text class="text-cut">类别：</text><text>{{item.kind}}</text>
+			</view>
+
+			<view class="content">
+				<image class="br" src="{{item.cover}}" mode="aspectFill" style="border-raduis:10rpx;"></image>
+				<view class="desc">
+					<view class="text-content" style="	height: 6em;"> {{item.des}}</view>
+				</view>
+			</view>
+			<view class='flex margin-top-sm'>
+				<view class="cu-btn bg-grey light lg flex-sub" bindtap="del" data-id="{{item._id}}">删除</view>
+				<view class="cu-btn bg-mian lg flex-sub " bindtap="goList" data-id="{{item._id}}">查看相关内容</view>
+			</view>
+		</view>
+
+	</view>
+</block>

@@ -1,0 +1,72 @@
+<!-- 首页 -->
+<view class="margin" bindtap="showDes">
+
+	<view class="news-head">
+		<text class="cuIcon-similar  text-gray" style="font-size:40rpx;"></text>
+		<text class="margin-left-xs h-title">{{hislist[0].name}}</text>
+	</view>
+	<view class="ajc">
+		<image class="margin-top " style="width:100%" src="{{hislist[0].cover}}" lazy-load mode="widthFix"></image>
+	</view>
+</view>
+<view class="bg-gray" style="height:15rpx;"></view>
+
+<!-- 这个下面放分类列表 -->
+<view class="margin">
+	<view>
+		<view class="news-head">
+			<text class="cuIcon-similar  text-gray" style="font-size:40rpx;"></text>
+			<view class="flex justify-between">
+				<view class="margin-left-xs h-title">院内新闻</view>
+
+				<navigator class="news-all" url="../news/news?type=全部">全部 ></navigator>
+
+
+			</view>
+
+		</view>
+		<view class="desc padding-top">
+			<button bindtap="goNews" class="btn" style=" background-color: rgb(241, 241, 241);" size="mini" wx:for="{{newsType}}" wx:key="index" wx:if="{{index<=5}}" id="{{index}}">{{item.title}}</button>
+		</view>
+	</view>
+</view>
+<view class="bg-gray" style="height:15rpx;"></view>
+
+<!-- 热度前三名 -->
+<view class="margin">
+	<view>
+		<view class="news-head">
+			<text class="cuIcon-similar  text-gray" style="font-size:40rpx;"></text>
+			<text class="margin-left-xs h-title">推荐医生</text>
+		</view>
+		<!-- 推荐医师列表前三名 -->
+		<view class="doc-head" wx:for="{{viewList}}" wx:key="index" style="border-bottom:1px dotted #eee;">
+			<view style="width:20%;">
+				<image src="{{item.doctorImg}}" lazy-load></image>
+			</view>
+			<view style="width:60%;">
+				<view class="doc-head-center">
+
+					<view class="doc-head-center-a">
+						<text>{{item.name}}</text>
+						<text class="doctor-post">{{item.dept}}</text>
+					</view>
+
+					<view class="hospital-grade">三甲</view>
+					<view class="hospital-property">
+						<text>{{item.hospital}}</text>
+						<text>{{item.major}}</text>
+					</view>
+
+					<view class="doc-talk">
+						<view>咨询人次：</view>
+						<view class="talk-sum">{{item.viewNum}}</view>
+					</view>
+				</view>
+			</view>
+			<view style="width:20%;">
+				<button class="bg-mian" size="mini" bindtap="goSayWords" data-id="{{item._id}}">评价</button>
+			</view>
+		</view>
+	</view>
+</view>

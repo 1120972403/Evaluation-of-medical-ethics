@@ -1,0 +1,4 @@
+/* pages/admin/admin.wxss */
+page{
+  background-color: #eee;
+}

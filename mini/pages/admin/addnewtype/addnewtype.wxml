@@ -1,0 +1,49 @@
+<!--pages/admin/addnewtype/addnewtype.wxml-->
+<block wx:for="{{list}}" wx:key="_id">
+
+	<view class=" bg-white text-center margin" style="border:1px solid #eee;">
+		<view class="padding" style="border-bottom:1px dashed #eee;">
+			<text>类别名：{{item.title}}</text>
+		</view>
+		<view class="padding">类别描述：{{item.des}}</view>
+
+		<view class='flex margin-top-sm'>
+			<view class="cu-btn bg-grey light lg flex-sub" bindtap="del" data-id="{{item._id}}" data-kind="{{item.title}}">删除</view>
+		</view>
+	</view>
+
+</block>
+
+
+
+
+
+<view class="padding flex flex-direction">
+	<button class="cu-btn bg-mian  lg" bindtap="showModal">新增</button>
+</view>
+
+
+
+<view class="cu-modal show" hidden='{{addModel}}'>
+	<view class="cu-dialog">
+		<view class="cu-bar bg-mian justify-end">
+			<view class="content text-white">新增分类</view>
+			<view class="action" bindtap="hideModal">
+				<text class="cuIcon-close text-white"></text>
+			</view>
+		</view>
+
+		<view class="cu-form-group">
+			<view class="title">分类标题</view>
+			<input confirm-type="done" placeholder="仅支持最多6个字" value='{{title}}' bindinput='titleInput' maxlength='6'></input>
+		</view>
+		<view class="cu-form-group">
+			<view class="title">分类描述</view>
+			<input confirm-type="done" placeholder="请输入分类描述" value='{{des}}' bindinput='desInput'></input>
+		</view>
+		<view class='flex '>
+			<view class="cu-btn bg-white lg flex-sub" bindtap="hideModal">取消</view>
+			<view class="cu-btn bg-mian lg flex-sub " bindtap="add">新增</view>
+		</view>
+	</view>
+</view>

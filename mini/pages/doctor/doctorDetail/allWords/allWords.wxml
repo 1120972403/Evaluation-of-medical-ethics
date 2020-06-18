@@ -1,0 +1,66 @@
+<!-- 评价 -->
+<view class="container">
+	<text>隐私保护</text>
+	<view class="star-pos">
+
+		<view class="stars cuIcon-likefill    {{flag1>=1? 'text-red': 'text-gray'}}" data-index="1" bindtap="changeColor1"></view>
+		<view class="stars cuIcon-likefill    {{flag1>=2? 'text-red': 'text-gray'}}" data-index="2" bindtap="changeColor1"></view>
+		<view class="stars  cuIcon-likefill   {{flag1>=3? 'text-red': 'text-gray'}}" data-index="3" bindtap="changeColor1"></view>
+		<view class="stars cuIcon-likefill    {{flag1>=4? 'text-red': 'text-gray'}}" data-index="4" bindtap="changeColor1"></view>
+		<view class="stars  cuIcon-likefill   {{flag1>=5? 'text-red': 'text-gray'}}" data-index="5" bindtap="changeColor1"></view>
+
+	</view>
+</view>
+
+<view class="container">
+	<text>医师尽责</text>
+	<view class="star-pos">
+		<view class="stars cuIcon-likefill    {{flag2>=1? 'text-red': 'text-gray'}}" data-index="1" bindtap="changeColor2"></view>
+		<view class="stars cuIcon-likefill    {{flag2>=2? 'text-red': 'text-gray'}}" data-index="2" bindtap="changeColor2"></view>
+		<view class="stars  cuIcon-likefill   {{flag2>=3? 'text-red': 'text-gray'}}" data-index="3" bindtap="changeColor2"></view>
+		<view class="stars cuIcon-likefill    {{flag2>=4? 'text-red': 'text-gray'}}" data-index="4" bindtap="changeColor2"></view>
+		<view class="stars  cuIcon-likefill   {{flag2>=5? 'text-red': 'text-gray'}}" data-index="5" bindtap="changeColor2"></view>
+	</view>
+</view>
+<view class="container">
+	<text>专业能力</text>
+	<view class="star-pos">
+		<view class="stars cuIcon-likefill    {{flag3>=1? 'text-red': 'text-gray'}}" data-index="1" bindtap="changeColor3"></view>
+		<view class="stars cuIcon-likefill    {{flag3>=2? 'text-red': 'text-gray'}}" data-index="2" bindtap="changeColor3"></view>
+		<view class="stars  cuIcon-likefill   {{flag3>=3? 'text-red': 'text-gray'}}" data-index="3" bindtap="changeColor3"></view>
+		<view class="stars cuIcon-likefill    {{flag3>=4? 'text-red': 'text-gray'}}" data-index="4" bindtap="changeColor3"></view>
+		<view class="stars  cuIcon-likefill   {{flag3>=5? 'text-red': 'text-gray'}}" data-index="5" bindtap="changeColor3"></view>
+	</view>
+</view>
+<view class="container">
+	<text>医师态度</text>
+	<view class="star-pos">
+		<view class="stars cuIcon-likefill    {{flag4>=1? 'text-red': 'text-gray'}}" data-index="1" bindtap="changeColor4"></view>
+		<view class="stars cuIcon-likefill    {{flag4>=2? 'text-red': 'text-gray'}}" data-index="2" bindtap="changeColor4"></view>
+		<view class="stars  cuIcon-likefill   {{flag4>=3? 'text-red': 'text-gray'}}" data-index="3" bindtap="changeColor4"></view>
+		<view class="stars cuIcon-likefill    {{flag4>=4? 'text-red': 'text-gray'}}" data-index="4" bindtap="changeColor4"></view>
+		<view class="stars  cuIcon-likefill   {{flag4>=5? 'text-red': 'text-gray'}}" data-index="5" bindtap="changeColor4"></view>
+	</view>
+</view>
+<view class="container">
+	<text>医师疗效</text>
+	<view class="star-pos">
+		<view class="stars cuIcon-likefill    {{flag5>=1? 'text-red': 'text-gray'}}" data-index="1" bindtap="changeColor5"></view>
+		<view class="stars cuIcon-likefill    {{flag5>=2? 'text-red': 'text-gray'}}" data-index="2" bindtap="changeColor5"></view>
+		<view class="stars  cuIcon-likefill   {{flag5>=3? 'text-red': 'text-gray'}}" data-index="3" bindtap="changeColor5"></view>
+		<view class="stars cuIcon-likefill    {{flag5>=4? 'text-red': 'text-gray'}}" data-index="4" bindtap="changeColor5"></view>
+		<view class="stars  cuIcon-likefill   {{flag5>=5? 'text-red': 'text-gray'}}" data-index="5" bindtap="changeColor5"></view>
+	</view>
+</view>
+<view class="container">
+	<text>医师用药</text>
+	<view class="star-pos">
+		<view class="stars cuIcon-likefill  {{flag6>=1? 'text-red': 'text-gray'}}" data-index="1" bindtap="changeColor6"></view>
+		<view class="stars cuIcon-likefill    {{flag6>=2? 'text-red': 'text-gray'}}" data-index="2" bindtap="changeColor6"></view>
+		<view class="stars  cuIcon-likefill   {{flag6>=3? 'text-red': 'text-gray'}}" data-index="3" bindtap="changeColor6"></view>
+		<view class="stars cuIcon-likefill    {{flag6>=4? 'text-red': 'text-gray'}}" data-index="4" bindtap="changeColor6"></view>
+		<view class="stars  cuIcon-likefill   {{flag6>=5? 'text-red': 'text-gray'}}" data-index="5" bindtap="changeColor6"></view>
+	</view>
+</view>
+<textarea placeholder="说点什么吧..." value="{{content}}" bindinput="contentInput"></textarea>
+<button class="bg-mian"  size="mini" bindtap="check">发表评价</button>

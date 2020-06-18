@@ -1,0 +1,4 @@
+/* mini/pages/hospitalDetail/hospitalDetail.wxss */
+textarea{
+  width: 100%;
+}

@@ -1,0 +1,18 @@
+/**app.wxss**/
+@import "colorui/main.wxss";
+@import "colorui/icon.wxss";
+
+
+.bg-mian{
+background-color: #5F9EA0;
+}
+.html{
+  padding:15px;
+  background: #ffffff;
+}
+.cu-form-group {
+
+	border: 1px solid #eee;
+  margin: 10rpx;
+  
+}

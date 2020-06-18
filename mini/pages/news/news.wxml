@@ -1,0 +1,23 @@
+<!-- 所有院内新闻 -->
+
+<view class="news">
+  <text bindtap="selectType" class="{{flag==item? 'select':'news-item'}}" wx:for="{{newsType}}" wx:key="index" id="{{index}}">{{item}}</text>
+</view>
+
+<view class='kind_contain' style='margin:10px'>
+	<block wx:for="{{list}}" wx:key="_id">
+		<block wx:for="{{item}}" wx:key="_id">
+			<view style='width:{{app_width/2-10}}px' bindtap='details'  bindtap="showNewsDetail" data-id="{{item._id}}">
+				<view class='bg-whites borderRadius' style='margin:10px;overflow:hidden'>
+					<view style='padding:10px'>
+						<image src='{{item.cover}}' style='width:{{app_width/2-50}}px;height:{{app_width/2-50}}px;border-radius:10px'></image>
+					</view>
+					<view class='padding-sm bg-white'>
+						<view class='text-black text-center'>{{item.title}}</view>
+						<view class='text-grey text-sm text-center'>{{item.des}}</view>
+					</view>
+				</view>
+			</view>
+		</block>
+	</block>
+</view>

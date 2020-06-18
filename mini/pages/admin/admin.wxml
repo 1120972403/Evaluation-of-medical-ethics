@@ -1,0 +1,56 @@
+<!-- 我的 -->
+<!--miniprogram/pages/admin/admin.wxml-->    
+<view class="cu-list menu  sm-border card-menu margin-top shadow-lg " style=" border-radius:20rpx;">
+  <view class="cu-item arrow" bindtap="go" data-to="/pages/admin/hospital/hospital">
+    <view class="content">
+      <text class="cuIcon-sort text-grey"></text>
+      <text class="text-grey">医院介绍</text>
+    </view>
+  </view>
+  <view class="cu-item arrow" bindtap="go" data-to= "/pages/admin/addnewtype/addnewtype">
+    <view class="content">
+      <text class="cuIcon-sort text-grey"></text>
+      <text class="text-grey">新增新闻分类</text>
+    </view>
+  </view>
+  <!-- 实时政治管理 -->
+  <view class="cu-item arrow" bindtap="go" data-to="/pages/admin/addnew/addnew">
+    <view class="content">
+      <text class="cuIcon-comment text-blue"></text>
+      <text class="text-grey">添加新闻</text>
+    </view>
+  </view>
+
+  <!-- 打卡内容管理 -->
+  <view class="cu-item arrow" bindtap="go" data-to="/pages/admin/looknewlist/looknewlist">
+    <view class="content">
+      <text class="cuIcon-form text-olive"></text>
+      <text class="text-grey">查看新闻列表</text>
+    </view>
+  </view>
+  <view class="cu-item arrow" bindtap="go" data-to= "/pages/admin/adddoctor/adddoctor">
+    <view class="content">
+      <text class="cuIcon-form text-olive"></text>
+      <text class="text-grey">新增医生</text>
+    </view>
+  </view>
+  <view class="cu-item arrow" bindtap="go" data-to="/pages/admin/lookdoctorlist/lookdoctorlist">
+    <view class="content">
+      <text class="cuIcon-form text-olive"></text>
+      <text class="text-grey">查看医生列表</text>
+    </view>
+  </view>
+
+
+
+  <view class="cu-item arrow" bindtap="go" data-to="/pages/admin/commets/commets">
+    <view class="content">
+      <text class="cuIcon-notification text-red"></text>
+      <text class="text-grey">管理评价列表</text>
+    </view>
+  </view>
+
+
+</view>
+
+

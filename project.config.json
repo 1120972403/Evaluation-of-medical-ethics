@@ -1,0 +1,202 @@
+{
+	"miniprogramRoot": "mini/",
+	"cloudfunctionRoot": "cloud/",
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"coverView": true,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.11.0",
+	"appid": "wxcbb880b74d3f907d",
+	"projectname": "%E5%8C%BB%E5%BE%B7%E5%8C%BB%E9%A3%8E%E8%AF%84%E4%BB%B7%E7%B3%BB%E7%BB%9Fpro2",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/admin/admin",
+					"pathName": "pages/admin/admin",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "添加新闻类型",
+					"pathName": "pages/admin/addnewtype/addnewtype",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "添加新闻",
+					"pathName": "pages/admin/addnew/addnew",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "新增医生",
+					"pathName": "pages/admin/adddoctor/adddoctor",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "医生列表",
+					"pathName": "pages/admin/lookdoctorlist/lookdoctorlist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "新闻列表",
+					"pathName": "pages/admin/looknewlist/looknewlist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "医院介绍",
+					"pathName": "pages/admin/hospital/hospital",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "医院介绍",
+					"pathName": "pages/admin/hospital/hospital",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "评价列表",
+					"pathName": "pages/admin/commets/commets",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "反馈",
+					"pathName": "pages/user/feedback/feedback",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "评价管理",
+					"pathName": "pages/admin/commets/commets",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "评价医生",
+					"pathName": "pages/doctor/doctorDetail/doctorDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的信息页面",
+					"pathName": "pages/user/userInfo/userInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "新闻",
+					"pathName": "pages/news/news",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "新闻",
+					"pathName": "pages/news/news",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/user/user",
+					"pathName": "pages/user/user",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/news/news",
+					"pathName": "pages/news/news",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "查看新闻列表",
+					"pathName": "pages/news/news",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "医师详细",
+					"pathName": "pages/doctor/doctorDetail/doctorDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/user/collect/collect",
+					"pathName": "pages/user/collect/collect",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/admin/admin",
+					"pathName": "pages/admin/admin",
+					"scene": null
+				}
+			]
+		}
+	}
+}

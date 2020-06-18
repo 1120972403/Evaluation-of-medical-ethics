@@ -1,0 +1,29 @@
+/* mini/pages/user/collect/collect.wxss */
+page{
+  display: flex;
+  flex-direction: column;
+  background: #eee;
+  padding: 20rpx 0;
+}
+.container{
+  width: 750rpx;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1rpx solid silver;
+}
+.container view{
+  padding: 20rpx;
+}
+.title{
+  width: 720rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content{
+  width: 90%;
+}
+.title textarea{
+  height: 40rpx;
+}

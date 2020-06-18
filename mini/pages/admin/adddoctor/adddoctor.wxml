@@ -1,0 +1,49 @@
+<!--pages/admin/addnew/addnew.wxml-->
+<view class="cu-form-group solid">
+  <view class="title">姓名</view>
+  <input placeholder="仅支持最多4个字" value='{{name}}' bindinput='titleName' maxlength='10'></input>
+</view>
+<view class="cu-form-group solid">
+  <view class="title">职称</view>
+   <input placeholder="仅支持最多4个字" value='{{dept}}' bindinput='titleDept' maxlength='10'></input>
+</view>
+
+<view class="cu-form-group solid">
+  <view class="title">专业擅长</view>
+   <input placeholder="请输入专业擅长" value='{{major}}' bindinput='titleMajor' ></input>
+</view>
+
+<view class="cu-form-group solid">
+  <view class="title">医院</view>
+   <input placeholder="请输入医院名称" value='{{hospital}}' bindinput='titleHospital' ></input>
+   <view style="border-left:1px solid #eee;"></view>
+    <view class="title">科室</view>
+   <input placeholder="请输入科室名称" value='{{office}}' bindinput='titleOffice' ></input>
+</view>
+
+<view class="cu-form-group solid align-start">
+  <view class="title">医生描述</view>
+  <textarea  value='{{des}}' bindinput='desInput' placeholder="请输入医生介绍"></textarea>
+</view>
+
+<!-- <view class="cu-form-group solid">
+  <view class="title">类别</view>
+  <picker bindchange="kindChange" range="{{kindList}}" range-key="title">
+    <view class="picker">
+      {{kind}}
+    </view>
+  </picker>
+</view> -->
+
+
+
+<view class="cu-form-group solid">
+  <view class="title">医生照片</view>
+  <view class="title text-grey" wx:if="{{cover!==''}}" bindtap='chooseImg'>重新上传</view>
+  <image wx:if="{{cover==''}}" class='cu-avatar  bg-white' src='/libs/images/add.png' bindtap='chooseImg'></image>
+  <image wx:if="{{cover!==''}}" class='cu-avatar  bg-white' src='{{cover}}' bindtap='previewImg' data-img='{{cover}}'></image>
+</view>
+
+<view class="padding flex flex-direction v_bottom" >
+  <button class="cu-btn bg-mian margin-tb-sm lg" bindtap='check'>保存发布</button>
+</view>

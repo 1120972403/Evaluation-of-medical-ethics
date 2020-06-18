@@ -1,0 +1,24 @@
+<!-- 我的资料 -->
+<view class="stuff-header">
+ <open-data type="userAvatarUrl" class="stuff-header-img" ></open-data>
+  <!-- <image class="stuff-header-img" src="{{img}}"></image> -->
+</view>
+
+<view class="stuff-body">
+  <view>
+    <input type="text"  name="name" placeholder="请输入姓名" bindinput="nameInput" value="{{name}}" disabled="{{flag}}"></input>
+  </view>
+   <view>
+    <input type="number" name="age" placeholder="请输入年龄" bindinput="ageInput" value="{{age}}" disabled="{{flag}}"></input>
+  </view>
+   <view>
+    <input type="text" name="address" placeholder="请输入地址" bindinput="addressInput" value="{{address}}" disabled="{{flag}}"></input>
+  </view>
+   <view>
+    <input type="number" name="phone" placeholder="请输入联系方式" bindinput="phoneInput" value="{{phone}}" disabled="{{flag}}"></input>
+  </view>
+</view>
+<view class="padding flex flex-direction">
+	<button class="cu-btn bg-mian  lg" bindtap="check" wx:if="{{!flag}}">保存</button>
+  <button class="cu-btn bg-mian  lg" bindtap="update" wx:else>修改</button>
+</view>

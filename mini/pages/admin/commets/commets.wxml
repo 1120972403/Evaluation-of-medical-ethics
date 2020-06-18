@@ -1,0 +1,61 @@
+<!--pages/admin/commets/commets.wxml-->
+<!-- <view class="grid col-4 padding-sm">
+	<view class="margin-tb-sm text-center" wx:for="{{btnList}}" wx:key>
+		<button class="cu-btn round">{{item.name}}</button>
+	</view>
+</view> -->
+
+<!-- 加载评论列表，进行审核 -->
+<block wx:for="{{list}}" wx:key="index">
+	<block wx:for="{{item}}" wx:key="_id">
+		<view class="cu-list menu solids-top">
+			<view class="cu-item arrow'">
+				<navigator class="content" hover-class="none" url="/pages/doctor/doctorDetail/doctorDetail?_id={{item.doctorInfo._id}}">
+			
+					<text class="cuIcon-titles text-yellow"></text>
+					<text class="text-grey">查看{{item.doctorInfo.name}}详细页面</text>
+				</navigator>
+			</view>
+		</view>
+
+		<view class="cu-list menu-avatar comment" style='margin-top:0'>
+			<view class="cu-item">
+
+				<image class="cu-avatar round" src="{{item.doctorInfo.doctorImg}}"></image>
+				<view class="content">
+					<view class="text-grey">{{item.doctorInfo.name}}</view>
+					<!-- 加载星星 -->
+					<view class="star-pos" style="display:flex;flex-direction:row;">
+						<view class="stars cuIcon-likefill {{item.endstar>=1? 'text-red': 'text-gray'}}" bindtap="changeColor1"></view>
+						<view class="stars cuIcon-likefill {{item.endstar>=2? 'text-red': 'text-gray'}}" bindtap="changeColor1"></view>
+						<view class="stars cuIcon-likefill {{item.endstar>=3? 'text-red': 'text-gray'}}"></view>
+						<view class="stars cuIcon-likefill {{item.endstar>=4? 'text-red':'text-gray'}}"></view>
+						<view class="stars cuIcon-likefill {{item.endstar>=5? 'text-red': 'text-gray'}}"></view>
+					</view>
+					<view class="text-gray text-content text-df"> {{item.content}}</view>
+
+					<view class="bg-grey light padding-sm radius margin-top-sm  text-sm" wx:if="{{item.reply.code==1}}">
+						<view class="flex">
+							<view>{{item.reply.admin.nickName}}：</view>
+							<view class="flex-sub">{{item.reply.content}}</view>
+							<view bindtap='del' data-mess='{{item}}'><text class='cuIcon-close lg text-red'></text></view>
+						</view>
+					</view>
+					<view class="margin-top-sm flex justify-between">
+						<view class="text-gray text-df">{{item.createTime}}</view>
+						<view class="bg-mian text-sm padding-left padding-right round light" wx:if="{{item.openView}}" bindtap='verify' data-id='{{item._id}}' data-set='false'>状态设置：已审</view>
+						<view class="bg-grey text-sm text-sm padding-left padding-right round " wx:if="{{!item.openView}}" bindtap='verify' data-id='{{item._id}}' data-set='true'>状态设置：未审</view>
+						<view>
+						</view>
+					</view>
+				</view>
+        <!-- 删除按钮 -->
+				<view>
+					<view class="cu-tag bg-grey " bindtap="delCard" data-id="{{item._id}}" style="border-radius:10rpx;">
+						<text class="cuIcon-deletefill"></text>
+					</view>
+				</view>
+			</view>
+		</view>
+	</block>
+</block>

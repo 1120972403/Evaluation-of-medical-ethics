@@ -1,0 +1,32 @@
+<!-- 患者评价 -->
+<view class="doc-foot">
+
+	<view class="doc-foot-head">
+		<text>患者评价</text>
+	</view>
+
+
+
+	<view wx:for="{{commList}}" wx:for-key="key1" wx:key="index" wx:for-item="item" style="border-bottom:1px dotted #eee;">
+		<view class="user-says">
+
+			<view class="user-says-title">
+
+				<text class="name">{{item.userInfo.name}}**</text>
+				<!-- 星星组件 -->
+				<text class="stars cuIcon-likefill {{item.endstar-1>=row? 'text-red': 'text-gray'}}" wx:for="{{5}}" wx:key="row" wx:for-key="row" wx:for-item="row" id="{{index}}"></text>
+
+			</view>
+
+			<text>
+<text class="time">{{item.createTime}}</text>
+
+			</text>
+
+		</view>
+
+		<view style="margin:5rpx 20rpx;">
+			<text class="user-says-item ">{{item.content}}</text>
+		</view>
+	</view>
+</view>

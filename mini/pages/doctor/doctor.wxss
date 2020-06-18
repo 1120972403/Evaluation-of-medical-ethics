@@ -1,0 +1,21 @@
+/* pages/doctor/doctor.wxss */
+page{
+  width: 100%;
+  height:100%;
+  background-color: #eee;
+}
+.kind_contain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+.bg-whites{
+  background-color: rgba(255, 255, 255, 0.7)
+}
+.img-box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+}

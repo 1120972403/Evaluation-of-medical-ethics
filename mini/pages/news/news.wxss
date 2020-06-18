@@ -1,0 +1,68 @@
+/* mini/pages/news/news.wxss */
+page{
+  display: flex;
+  flex-direction: column;
+  background: #eee;
+  padding: 20rpx 0;
+}
+.news{
+  width: 100%;
+  padding: 0 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.news-item{
+  background: white;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  margin: 10rpx 10rpx;
+}
+
+.select{
+  padding: 20rpx;
+  border-radius: 10rpx;
+  margin: 10rpx 10rpx;
+  background: rgb(7, 193, 96);
+  color: white;
+}
+
+.container{
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.kind_contain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+.bg-whites{
+  background-color: rgba(255, 255, 255, 0.7)
+}
+.img-box{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.doctor{
+  width: 270rpx;
+  background: white;
+  height: 350rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10rpx;
+  margin: 20rpx 0;
+  padding: 20rpx;
+}
+.doctor image{
+  width: 240rpx;
+  height: 270rpx;
+}
+.doc-name{
+  margin-top: 20rpx;
+}
